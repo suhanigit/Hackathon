@@ -1,0 +1,21 @@
+# Ignore Python virtual environment
+venv/
+
+# Ignore html files
+html/
+
+# Ignore Mavlink files
+mav.tlog
+mav.tlog.raw
+mav.parm
+
+# dependencies
+/drone-mission-frontend/node_modules
+
+# Ignore environment file
+/drone-mission-frontend/.env
+
+# Ignore drone mission frontend build files
+/drone-mission-frontend/
+
+areodrop/.gitignore

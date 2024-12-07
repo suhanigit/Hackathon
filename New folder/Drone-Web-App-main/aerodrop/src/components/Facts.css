@@ -1,0 +1,84 @@
+/* Facts Page Styles */
+.facts-page {
+    padding: 50px;
+    background-image: url(); /* Background image related to the topic */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .facts-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .facts-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .facts table {
+    width: 100%;
+    margin-top: 0px;
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect around the table */
+  }
+  
+  .facts th, .facts td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .facts th {
+    background-color: #059669;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .facts tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .facts tr:hover {
+    background-color: #ddd;
+  }
+  
+  .facts td {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .facts td:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .facts-container .cta-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #059669;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .facts-container .cta-button:hover {
+    background-color: #10b981;
+  }
+.table-container{
+    margin-top: 0;
+}

@@ -1,0 +1,45 @@
+/* Footer.css */
+
+/* Basic styling for the footer */
+.footer {
+    background-color: #282c34;  /* Same dark background as navbar */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Shadow to match navbar style */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Footer text */
+  .footer p {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #d1d1d1;  /* Lighter gray text */
+  }
+  
+  /* Footer link (optional) */
+  .footer a {
+    color: #007bff; /* Blue color for any links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Responsive behavior for smaller screens */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 15px 0;
+    }
+  
+    .footer p {
+      font-size: 14px;
+    }
+  }
+  

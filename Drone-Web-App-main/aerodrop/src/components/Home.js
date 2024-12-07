@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 
 
-import image1 from "./images/image-2.jpg";
-import image2 from "./images/image-3.avif";
-import image3 from "./images/image-4.jpg";
-import image4 from "./images/image-5.webp";
-import image5 from "./images/NDRF-3.webp";
+const image1 = "/images/image-2.jpg";
+const image2 = "/images/image-3.avif";
+const image3 = "/images/image-4.jpg";
+const image4 = "/images/image-5.webp";
+const image5 = "/images/NDRF-3.webp";
 
 
 const Home = () => {

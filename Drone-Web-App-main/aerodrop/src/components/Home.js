@@ -3,10 +3,10 @@ import "./Home.css";
 
 
 const image1 = "/images/image-2.jpg";
-const image2 = "/images/image-3.avif";
-const image3 = "/images/image-4.jpg";
-const image4 = "/images/image-5.webp";
-const image5 = "/images/NDRF-3.webp";
+const image2 = "/images/image-1.avif";
+const image3 = "/images/image-7.webp";
+const image4 = "/images/image-9.jpg";
+const image5 = "/images/image-3.jpg";
 
 
 const Home = () => {
@@ -36,7 +36,7 @@ const Home = () => {
       }}
     >
       <div className="overlay">
-        <h1>Welcome to NDRF Drone Control</h1>
+        <h1>Welcome to SHAKTI Drone Control</h1>
         <p>Select a page from the menu to explore!</p>
       </div>
     </div>

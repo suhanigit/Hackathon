@@ -12,29 +12,89 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center text */
+  transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 1;
+  padding: 30px 50px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px); /* Adds a glassmorphism effect */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
   color: white;
-  z-index: 1; /* Ensure content stays above the background */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  animation: popIn 1s ease-in-out;
 }
 
 .overlay h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
-  animation: fadeIn 2s ease-in-out;
+  font-weight: bold;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: wheat; /* Vibrant gold for emphasis */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Shadow for better readability */
+  animation: fadeInDown 1.5s ease-in-out;
+  text-shadow: 5PX black ;
 }
 
 .overlay p {
-  font-size: 1.5rem;
-  animation: fadeIn 2s ease-in-out;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  animation: fadeInUp 1.5s ease-in-out;
+  font-style: italic;
 }
 
-/* Fade-in animation */
-@keyframes fadeIn {
+/* Call-to-Action Button (Optional) */
+.overlay .cta-button {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 1.3rem;
+  background-color: #ff4500; /* Bright button color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(255, 69, 0, 0.6);
+}
+
+.overlay .cta-button:hover {
+  background-color: #e03d00;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 69, 0, 0.8);
+}
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
   from {
     opacity: 0;
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

@@ -1,62 +1,150 @@
 /* About Page Styles */
 .about-container {
-    padding: 50px;
-    background-image: url(); /* Background image related to Smart India Hackathon 2024 */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
+  padding: 50px;
+  background: linear-gradient(135deg, #eab308, #facc15); /* Subtle gradient for a richer background */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about-container h2 {
+  font-size: 2.8rem; /* Increased size for better visibility */
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for more emphasis */
+}
+
+h2{
+  padding-top: 10px;
+}
+
+.about-container p {
+  font-size: 1.3rem; /* Slightly larger text for readability */
+  line-height: 1.9;
+  max-width: 900px; /* Increased width for better alignment */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-container p:first-child {
+  margin-top: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker background for better contrast */
+  padding: 15px 25px;
+  border-left: 6px solid #059669; /* Thicker border for a more prominent effect */
+  margin: 30px 0;
+  border-radius: 8px; /* Rounded edges for a smoother look */
+}
+
+/* Mission Cards */
+.missions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Increased spacing between cards */
+  margin-top: 50px;
+}
+
+.mission-card {
+  background: rgba(0, 0, 0, 0.8); /* Slightly darker for contrast */
+  border-radius: 12px; /* More rounded edges */
+  padding: 25px;
+  width: 320px; /* Slightly wider cards */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow for better elevation */
+  text-align: left;
+  color: white;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-10px); /* Moves the card upward on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow for hover effect */
+}
+
+.mission-card h3 {
+  font-size: 1.6rem; /* Larger title font */
+  margin-bottom: 12px;
+  color: #facc15; /* Slightly golden text for titles */
+}
+
+.mission-card p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.outcome {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.95rem; /* Slightly larger text */
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px; /* Adds spacing between letters for better readability */
+}
+
+.success {
+  background-color: #059669;
+  color: white;
+}
+
+.partial {
+  background-color: #facc15;
+  color: black;
+}
+
+.mixed {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  margin-top: 40px; /* Increased spacing */
+  padding: 12px 24px; /* Larger button */
+  font-size: 1.3rem; /* More prominent button text */
+  background-color: #059669;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #10b981;
+  transform: scale(1.1); /* Adds slight scaling on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow effect for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .about-container h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 2.2rem;
   }
-  
+
   .about-container p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .about-container p:first-child {
-    margin-top: 20px;
-  }
-  
-  .about-container .cta-button {
-    margin-top: 30px;
-    padding: 10px 20px;
     font-size: 1.1rem;
-    background-color: #059669;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
   }
-  
-  .about-container .cta-button:hover {
-    background-color: #10b981;
+
+  .missions {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  @media (max-width: 768px) {
-    .about-container h2 {
-      font-size: 2rem;
-    }
-  
-    .about-container p {
-      font-size: 1rem;
-    }
-  
-    .about-container .cta-button {
-      font-size: 1rem;
-    }
+
+  .mission-card {
+    width: 95%; /* Full width for smaller screens */
   }
-  
+
+  .cta-button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+}

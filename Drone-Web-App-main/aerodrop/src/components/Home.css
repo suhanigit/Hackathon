@@ -17,7 +17,7 @@
   z-index: 1;
   padding: 30px 50px;
   border-radius: 15px;
-  backdrop-filter: blur(5px); /* Adds a glassmorphism effect */
+  backdrop-filter: blur(2px); /* Adds a glassmorphism effect */
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
   color: white;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
@@ -43,6 +43,10 @@
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   animation: fadeInUp 1.5s ease-in-out;
   font-style: italic;
+}
+
+.overlay p:hover{
+  color:#e03d00;
 }
 
 /* Call-to-Action Button (Optional) */

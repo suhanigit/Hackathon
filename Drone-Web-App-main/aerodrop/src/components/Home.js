@@ -37,7 +37,8 @@ const Home = () => {
     >
       <div className="overlay">
         <h1>Welcome to SHAKTI Drone Control</h1>
-        <p>Select a page from the menu to explore!</p>
+        <a href="/livefeed"><p>Select a page from the menu to explore!</p>
+        </a>
       </div>
     </div>
   );
